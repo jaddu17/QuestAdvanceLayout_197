@@ -40,7 +40,7 @@ fun ActivitasPertama(modifier: Modifier){
         )
         Text(
             text = stringResource(id = R.string.univ),
-            fontSize = 22.sp
+            fontSize = 18.sp
         )
         Spacer(modifier = Modifier.height(height = 25.dp))
         Card(
@@ -58,6 +58,7 @@ fun ActivitasPertama(modifier: Modifier){
                     contentDescription = null,
                     modifier = Modifier
                         .size(size = 100.dp)
+                        .padding(all = 5.dp)
                 )
                 Spacer(modifier = Modifier.width(width = 30.dp))
                 Column(){
@@ -70,7 +71,7 @@ fun ActivitasPertama(modifier: Modifier){
                     )
                     Text(
                         text = stringResource(id = R.string.alamat),
-                        fontSize = 20.sp,
+                        fontSize = 15.sp,
                         color = Color.Yellow,
                         modifier = Modifier.padding(top = 10.dp)
                     )
