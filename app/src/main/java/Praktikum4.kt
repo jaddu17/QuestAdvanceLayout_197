@@ -104,5 +104,11 @@ fun Praktikum4(modifier: Modifier = Modifier) {
             fontSize = 14.sp,
             color = Color.White
         )
+        Text(
+            text = "Saya Seorang Front End Developer",
+            fontSize = 16.sp,
+            color = Color.White,
+            modifier = Modifier.padding(top = 5.dp)
+        )
     }
 }
