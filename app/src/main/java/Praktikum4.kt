@@ -196,6 +196,49 @@ fun Praktikum4(modifier: Modifier = Modifier) {
                 )
             }
         }
-
+        Spacer(modifier = Modifier.height(10.dp))
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(0.9f)
+                .padding(horizontal = 12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.DarkGray
+            ),
+            shape = RoundedCornerShape(20.dp),
+            elevation = CardDefaults.cardElevation(8.dp)
+        ) {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    val gambarKiri = painterResource(id = R.drawable.setting)
+                    Image(
+                        painter = gambarKiri,
+                        contentDescription = null,
+                        modifier = Modifier
+                            .size(50.dp)
+                            .padding(5.dp)
+                    )
+                    Spacer(modifier = Modifier.width(12.dp))
+                    Text(
+                        text = stringResource(id = R.string.setting),
+                        fontSize = 17.sp,
+                        fontFamily = FontFamily.Default,
+                        color = Color.White
+                    )
+                }
+                val gambarKanan = painterResource(id = R.drawable.play)
+                Image(
+                    painter = gambarKanan,
+                    contentDescription = null,
+                    modifier = Modifier.size(30.dp)
+                )
+            }
+        }
     }
+
 }
