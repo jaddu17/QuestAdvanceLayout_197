@@ -99,5 +99,10 @@ fun Praktikum4(modifier: Modifier = Modifier) {
             fontWeight = FontWeight.Bold,
             color = Color.White
         )
+        Text(
+            text = stringResource(id = R.string.instagram),
+            fontSize = 14.sp,
+            color = Color.White
+        )
     }
 }
