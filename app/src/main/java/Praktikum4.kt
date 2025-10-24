@@ -27,6 +27,15 @@ fun Praktikum4(modifier: Modifier = Modifier) {
             .background(Color.Gray)
             .padding(top = 15.dp),
         horizontalAlignment = Alignment.CenterHorizontally
-    )
+    ) {
+        val gambar = painterResource(id = R.drawable.saya2)
+        Image(
+            painter = gambar,
+            contentDescription = null,
+            modifier = Modifier
+                .padding(top = 40.dp)
+                .size(170.dp)
+                .clip(CircleShape)
+        )
     }
 }
