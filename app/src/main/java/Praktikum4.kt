@@ -92,6 +92,12 @@ fun Praktikum4(modifier: Modifier = Modifier) {
             }
         }
         Spacer(modifier = Modifier.height(5.dp))
-
+        Text(
+            text = stringResource(id = R.string.nama),
+            fontSize = 30.sp,
+            fontFamily = FontFamily.SansSerif,
+            fontWeight = FontWeight.Bold,
+            color = Color.White
+        )
     }
 }
