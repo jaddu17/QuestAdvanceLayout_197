@@ -66,5 +66,18 @@ fun Praktikum4(modifier: Modifier = Modifier) {
                     modifier = Modifier.size(30.dp)
                 )
             }
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.twitter),
+                    contentDescription = "Twitter",
+                    modifier = Modifier.size(30.dp)
+                )
+            }
+        }
     }
 }
