@@ -91,6 +91,7 @@ fun Praktikum4(modifier: Modifier = Modifier) {
                 )
             }
         }
+        Spacer(modifier = Modifier.height(5.dp))
 
     }
 }
